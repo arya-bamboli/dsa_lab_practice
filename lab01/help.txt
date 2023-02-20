@@ -1,0 +1,5 @@
+COMMANDS USED FOR COMPILING
+
+gcc -c count_vowels.c
+gcc -c master.c
+gcc -o count_vowels_exe count_vowels.o master.o

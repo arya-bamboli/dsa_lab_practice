@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "count.h"
 
+
+
+
 int main(void){
     char s[100];
     printf("enter a string: ");
