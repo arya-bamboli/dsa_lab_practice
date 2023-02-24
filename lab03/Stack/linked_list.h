@@ -2,7 +2,7 @@
 #define LINKEDLIST_H
 
 #include "element.h"
-#include "bool.h"
+// #include "bool.h"
 
 struct node
 {
