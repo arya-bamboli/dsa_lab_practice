@@ -21,11 +21,12 @@ char getChar(int index)
 {
     if (index < 26)
     {
-        return (char)(index + 65);
+        return (char)(index + 65); // get alphaabet ascii code
     }
+
     else
     {
-        return (char)(index + 22);
+        return (char)(index + 22); // get integer ascii code
     }
 }
 
@@ -57,5 +58,6 @@ int main()
         }
         fseek(fptr, 1, SEEK_CUR);
     }
+    printf("\n");
     printf(ans);
 }
