@@ -1,5 +1,5 @@
-#ifndef STACKCHAR_H
-#define STACKCHAR_H
+#ifndef MERGERSORT_H
+#define MERGERSORT_H
 
 void mergeSort(int A[],int st, int end);
 
