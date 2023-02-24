@@ -1,0 +1,5 @@
+gcc -c mergeSort.c -c merge.c -c mergeaux.c -c mergermain.c 
+
+gcc -o eval.exe merge.o mergermain.o mergeaux.o mergeSort.o
+
+./eval.exe 
