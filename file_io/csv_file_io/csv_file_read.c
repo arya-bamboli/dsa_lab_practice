@@ -20,8 +20,7 @@ int main()
         int row = 0;
         int column = 0;
  
-        while (fgets(buffer,
-                     1024, fp)) {
+        while (fgets(buffer, 1024, fp)) {
             column = 0;
             row++;
  
