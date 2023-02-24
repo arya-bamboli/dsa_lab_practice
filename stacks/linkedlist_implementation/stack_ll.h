@@ -12,6 +12,8 @@ Stack create();
 
 void push(Stack st, Element val);
 
+void pushRear(Stack st, Element val);
+
 bool pop(Stack st);
 
 Element top(Stack st);
@@ -21,4 +23,6 @@ bool isEmpty(Stack st);
 int sizeofStack(Stack st);
 
 void freeStack(Stack st);
+
+link createNewLink(Element val);
 #endif

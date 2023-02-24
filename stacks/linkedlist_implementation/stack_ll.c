@@ -13,6 +13,13 @@ struct stack_ll{
     link top;
 };
 
+link createNewLink(Element val){
+    link newnode = (link)malloc(sizeof(struct node));
+    newnode->ele=val;
+    newnode->next=NULL;
+    return newnode;
+}
+
 Stack create(){
     Stack mylist = (Stack)malloc(sizeof(struct stack_ll));
     mylist->count=0;
@@ -21,9 +28,7 @@ Stack create(){
 }
 
 void push(Stack st, Element val){
-    link newnode = (link)malloc(sizeof(struct node));
-    newnode->ele=val;
-    newnode->next=NULL;
+    link newnode = createNewLink(val);
     st->count++;
     if(st->count==0){
         st->top=newnode;
@@ -31,6 +36,16 @@ void push(Stack st, Element val){
         newnode->next=st->top;
         st->top=newnode;
     }
+}
+
+void pushRear(Stack st, Element val){
+    link newnode = createNewLink(val);
+    link tp = st->top;
+    while(tp->next!=NULL){
+        tp=tp->next;
+    }
+    tp->next=newnode;
+    st->count++;
 }
 
 bool pop(Stack st){
