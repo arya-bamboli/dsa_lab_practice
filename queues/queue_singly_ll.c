@@ -38,14 +38,32 @@ void push(Queue q, Element val){
     }
 }
 
-void pushRear(Queue q, Element val){
+void enque(Queue q, Element val){
     link newnode = createNewLink(val);
-    link tp =q->top;
+    link tp=q->top;
     while(tp->next!=NULL){
         tp=tp->next;
     }
     tp->next=newnode;
     q->count++;
+}
+
+bool deque(Queue q){
+    if(q->count==0) return false;
+    else{
+        link temp = q->top;
+        if(temp->next==NULL){
+            q->top=NULL;
+        }else{
+            while(temp->next->next!=NULL){
+                temp=temp->next;
+            }
+            link tp = temp->next;
+            temp->next=NULL;
+            free(tp);
+        }
+        return true;
+    }
 }
 
 bool pop(Queue q){

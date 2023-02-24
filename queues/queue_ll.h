@@ -10,19 +10,21 @@ typedef struct queue_ll * Queue;
 
 Queue create();
 
-void push(Queue st, Element val);
+void push(Queue q, Element val);
 
-void pushRear(Queue st, Element val);
+void enque(Queue q, Element val);
 
-bool pop(Queue st);
+bool deque(Queue q);
 
-Element top(Queue st);
+bool pop(Queue q);
 
-bool isEmpty(Queue st);
+Element top(Queue q);
 
-int sizeofStack(Queue st);
+bool isEmpty(Queue q);
 
-void freeStack(Queue st);
+int sizeofQueue(Queue q);
+
+void freeQueue(Queue q);
 
 link createNewLink(Element val);
 #endif
