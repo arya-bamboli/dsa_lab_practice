@@ -56,3 +56,7 @@ bool isEmpty(Stack st){
 int sizeofStack(Stack st){
     return st->count;
 }
+
+void freeStack(Stack st){
+    free(st);
+}

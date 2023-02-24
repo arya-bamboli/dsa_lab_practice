@@ -19,4 +19,6 @@ Element top(Stack st);
 bool isEmpty(Stack st);
 
 int sizeofStack(Stack st);
+
+void freeStack(Stack st);
 #endif
