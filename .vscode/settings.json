@@ -47,6 +47,12 @@
         "utility": "c",
         "valarray": "c",
         "variant": "c",
-        "vector": "c"
+        "vector": "c",
+        "stdio.h": "c",
+        "stack.h": "c",
+        "element.h": "c",
+        "string.h": "c",
+        "heap_usage.h": "c",
+        "person.h": "c"
     }
 }

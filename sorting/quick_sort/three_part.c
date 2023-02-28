@@ -1,19 +1,26 @@
+#include "quick_sort.h"
 #include <stdlib.h>
 
-int threePart(int Ls[], int lo, int hi, int pInd) {
+void swap(Person Ls[], int l, int r){
+    Person temp = Ls[l];
+    Ls[l] = Ls[r];
+    Ls[r] = temp;
+}
+
+int threePart(Person Ls[], int lo, int hi, int pInd) {
     swap(Ls, pInd, hi - 1);
     int pivPos, lt, rt, mid, pv;
     lt = lo;
     rt = hi - 2;
     mid = lo;
-    pv = Ls[hi - 1];
+    pv = Ls[hi - 1].height;
     while (mid <= rt) {
-        if (Ls[mid] < pv) {
+        if (Ls[mid].height < pv) {
             swap(Ls, lt, mid);
             lt++;
             mid++;
         }
-        else if (Ls[mid] > pv) {
+        else if (Ls[mid].height > pv) {
             swap(Ls, mid, rt);
             rt--;
         }
