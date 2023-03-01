@@ -53,6 +53,7 @@
         "element.h": "c",
         "string.h": "c",
         "heap_usage.h": "c",
-        "person.h": "c"
+        "person.h": "c",
+        "quick_sort.h": "c"
     }
 }

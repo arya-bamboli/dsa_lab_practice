@@ -69,10 +69,18 @@ int main(){
     gettimeofday(&t2, NULL);
     time_taken = (t2.tv_sec - t1.tv_sec) * 1e6;
     time_taken = (time_taken + (t2.tv_usec - t1.tv_usec)) * 1e-6;
-    printf("The tasks took %f seconds to execute\n", time_taken);
-    for(int i=0;i<1000;i++){
-        printf("%d %s %d \n", arr[i].id, arr[i].name, arr[i].height);
-    }
+    printf("The recursive approach took %f seconds to execute\n", time_taken);
+    // for(int i=0;i<1000;i++){
+    //     printf("%d %s %d \n", arr[i].id, arr[i].name, arr[i].height);
+    // }
+    // t1, t2;
+    // time_taken;
+    gettimeofday(&t1, NULL);
+    qsort_iter_attempt1(arr,0,999);
+    gettimeofday(&t2, NULL);
+    time_taken = (t2.tv_sec - t1.tv_sec) * 1e6;
+    time_taken = (time_taken + (t2.tv_usec - t1.tv_usec)) * 1e-6;
+    printf("The iterative approach took %f seconds to execute\n", time_taken);
     return 0;
 }
 
