@@ -54,6 +54,8 @@
         "string.h": "c",
         "heap_usage.h": "c",
         "person.h": "c",
-        "quick_sort.h": "c"
+        "quick_sort.h": "c",
+        "bitset": "c",
+        "radix_sort.h": "c"
     }
 }

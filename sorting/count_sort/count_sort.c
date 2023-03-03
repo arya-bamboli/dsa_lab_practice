@@ -16,8 +16,7 @@ int* counting_sort(int* A, int* B, int k, int n) {
         C[i] = C[i] + C[i - 1];
     }
     for (int j = n - 1; j >= 0; j--){ 
-        B[C[A[j]] - 1] = A[j];
-        C[A[j]]--;
+        B[--C[A[j]]] = A[j];
     }
     return B; 
 }
