@@ -12,4 +12,6 @@ int part(Person Ls[], int lo, int hi, int pInd);
 
 int threePart(Person Ls[], int lo, int hi, int pInd);
 
+void swap(Person Ls[], int l, int r);
+
 #endif  

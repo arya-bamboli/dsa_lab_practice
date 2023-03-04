@@ -1,11 +1,11 @@
 #include "quick_sort.h"
 #include <stdlib.h>
 
-void swap(Person Ls[], int l, int r){
-    Person temp = Ls[l];
-    Ls[l] = Ls[r];
-    Ls[r] = temp;
-}
+// void swap(Person Ls[], int l, int r){
+//     Person temp = Ls[l];
+//     Ls[l] = Ls[r];
+//     Ls[r] = temp;
+// }
 int part(Person Ls[], int lo, int hi, int pInd){
     swap(Ls, pInd, lo);
 
