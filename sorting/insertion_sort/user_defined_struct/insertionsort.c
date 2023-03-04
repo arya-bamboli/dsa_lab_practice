@@ -14,5 +14,5 @@ void insertInOrder(int v, Person A[], int last) {
         A[j+1] = A[j];
         j--;
     }
-    A[j+1] = v; 
+    A[j+1].height = v; 
 }

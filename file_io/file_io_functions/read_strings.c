@@ -6,7 +6,7 @@
 int main()
 {
     FILE* ptr;
-    char str[50];
+    char str[7];
     ptr = fopen("test.txt", "a+");
  
     if (NULL == ptr) {
@@ -15,8 +15,8 @@ int main()
  
     printf("content of this file are \n");
  
-    while (fgets(str, 50, ptr) != NULL) {
-        printf("%s", str);
+    while (fgets(str, 7, ptr) != NULL) {
+        printf("%s Hi ", str);
     }
  
     fclose(ptr);

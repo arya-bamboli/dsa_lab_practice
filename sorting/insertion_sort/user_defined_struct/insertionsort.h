@@ -1,7 +1,6 @@
 #ifndef INSERTIONSORT_H
 #define INSERTIONSORT_H
-
-typedef struct Person *Person;
+#include "person.h"
 
 void insertionSort(Person A[],int n);
 

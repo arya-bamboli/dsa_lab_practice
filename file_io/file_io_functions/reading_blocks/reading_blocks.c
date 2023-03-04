@@ -19,9 +19,9 @@ int main()
         // exit(1);
     }
  
-    struct Course inp1 = { "Algorithms", "30OCT" };
-    struct Course inp2 = { "DataStructures", "28SEPT" };
-    struct Course inp3 = { "Programming", "1NOV" };
+    struct Course inp1 = { "Algorithms", "30 OCT" };
+    struct Course inp2 = { "DataStructures", "28 SEPT" };
+    struct Course inp3 = { "Programming", "1 NOV" };
     fwrite(&inp1, sizeof(struct Course), 1, of);
     fwrite(&inp2, sizeof(struct Course), 1, of);
     fwrite(&inp3, sizeof(struct Course), 1, of);
@@ -42,6 +42,6 @@ int main()
     }
  
     while (fread(&inp, sizeof(struct Course), 1, inf))
-        printf("Course Name = %s ,Started = %s\n", inp.cname, inp.sdate);
+        printf("Course Name = %s, Started = %s\n", inp.cname, inp.sdate);
     fclose(inf);
 }
